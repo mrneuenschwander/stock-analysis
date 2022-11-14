@@ -21,11 +21,11 @@ vs:
 
 <img width="451" alt="Screenshot 2022-11-13 at 6 33 25 PM" src="https://user-images.githubusercontent.com/116296092/201557319-525b835b-e7c1-43ae-90f5-52771f85fa83.png">
 
-While the difference is subtle, the key ingredient is that the refactored code is able to loop through the output worksheet while the original is forced to use hard references. This also has the benefit of making the computer's job easier, and this is further shown in the full script above:
+While the difference is subtle, the key ingredient is that the refactored code is able to loop through the output worksheet while the original is forced to use hard references. Multpile For loops also have the benefit of making the computer's job easier, and this is further shown in the full script:
 
 <img width="620" alt="Screenshot 2022-11-13 at 6 40 02 PM" src="https://user-images.githubusercontent.com/116296092/201557822-3c4bb54e-79a0-4bd2-ab79-07c2f74497f0.png">
 
-The arrays up top provide a place to store the valies while the Challenge Sub is running, as opposed to the green_stocks Sub needing to place all values on the output worksheet every time prior to looping through again. The multiple For loops break the code up into more contained operations, and allows the efficiency of the code to increase by orders of magnitude.
+The arrays up top provide a place to store the values while the Challenge Sub is running, as opposed to the green_stocks Sub needing to place all values on the output worksheet every time prior to looping through again. The multiple For loops break the code up into more contained operations, and allows the efficiency of the code to increase by orders of magnitude.
 
 Yes, the refactored code is a bit more complicated in it's construction, but far more efficient. This is proven by the speedtests run immediately prior to beginning the refactor, as shown below:
 
