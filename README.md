@@ -21,7 +21,7 @@ vs:
 
 <img width="451" alt="Screenshot 2022-11-13 at 6 33 25 PM" src="https://user-images.githubusercontent.com/116296092/201557319-525b835b-e7c1-43ae-90f5-52771f85fa83.png">
 
-While the difference is subtle, the key ingredient is that the refactored code is able to loop through the output worksheet while the original is forced to use hard references. Multpile For loops also have the benefit of making the computer's job easier, and this is further shown in the full script:
+While the difference is subtle, the key ingredient is that the refactored code is able to loop through the output worksheet after all the values have been collected, avoiding a worksheet activation that wastes time, while the original is forced to use hard references and "deposit" on every loop. Multiple For loops that contain related processes before moving to the next step make the computer's job easier, and this is further shown in the full script:
 
 <img width="620" alt="Screenshot 2022-11-13 at 6 40 02 PM" src="https://user-images.githubusercontent.com/116296092/201557822-3c4bb54e-79a0-4bd2-ab79-07c2f74497f0.png">
 
