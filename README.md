@@ -25,7 +25,7 @@ While the difference is subtle, the key ingredient is that the refactored code i
 
 <img width="620" alt="Screenshot 2022-11-13 at 6 40 02 PM" src="https://user-images.githubusercontent.com/116296092/201557822-3c4bb54e-79a0-4bd2-ab79-07c2f74497f0.png">
 
-The arrays up top provide a place to store the values while the Challenge Sub is running, as opposed to the green_stocks Sub needing to place all values on the output worksheet every time prior to looping through again. The multiple For loops break the code up into more contained operations, and allows the efficiency of the code to increase by orders of magnitude.
+The arrays up top provide a place to store the values for all the stocks that we want to analyze while the Challenge Sub is running, as opposed to the green_stocks Sub needing to place individual values on the output worksheet every time prior to looping through again. The multiple For loops break the code up into more contained operations, and allows the efficiency of the code to increase by orders of magnitude.
 
 Yes, the refactored code is a bit more complicated in it's construction, but far more efficient. This is proven by the speedtests run immediately prior to beginning the refactor, as shown below:
 
